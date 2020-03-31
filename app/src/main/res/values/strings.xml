@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Artisphere</string>
+    <string name="register">Register</string>
+    <string name="artisphere_logo">Artisphere Logo</string>
+    <string name="login">Login</string>
+    <string name="processDialog">Registering User....</string>
+    <string name="emailLoginSuccess">createUserWithEmailSuccess</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_picture">Profile Picture</string>
+</resources>

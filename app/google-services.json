@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "461126861886",
+    "firebase_url": "https://artisphere-5df13.firebaseio.com",
+    "project_id": "artisphere-5df13",
+    "storage_bucket": "artisphere-5df13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461126861886:android:e19fc06e766fa87d5cbd6f",
+        "android_client_info": {
+          "package_name": "com.example.artisphere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461126861886-b46ro0cv1q0kpi0tfq95gno59130r313.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.artisphere",
+            "certificate_hash": "9727c26bb80238d33272f530bb292e79a0bb1232"
+          }
+        },
+        {
+          "client_id": "461126861886-dpllk32uormdmnet9232i2dtdkjpk9te.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFYJ21DXDVVHmPiaCmi40uIWFGf3C-I_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461126861886-dpllk32uormdmnet9232i2dtdkjpk9te.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

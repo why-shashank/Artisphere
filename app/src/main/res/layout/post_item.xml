@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/post_image">
 
         <ImageView
-            android:id="@+id/claps"
+            android:id="@+id/clap"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_claps" />
@@ -66,7 +66,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="30dp"
-            android:layout_toEndOf="@+id/claps"
+            android:layout_toEndOf="@+id/clap"
             android:src="@drawable/ic_comment" />
 
         <ImageView
@@ -88,12 +88,20 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/clapsAndComments"
+        android:id="@+id/claps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/claps"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
     <TextView
         android:id="@+id/description"
@@ -102,10 +110,10 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clapsAndComments" />
+        app:layout_constraintTop_toBottomOf="@+id/comments" />
 
     <TextView
-        android:id="@+id/comments"
+        android:id="@+id/read_comments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"

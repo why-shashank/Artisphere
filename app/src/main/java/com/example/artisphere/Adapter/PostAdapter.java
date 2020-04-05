@@ -1,6 +1,7 @@
 package com.example.artisphere.Adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -115,7 +116,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference()
                 .child("Claps")
-                .child("postid");
+                .child(postid);
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -138,7 +139,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     }
     private void nrClaps(final TextView claps, String postid){
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Claps")
-                .child("postid");
+                .child(postid);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

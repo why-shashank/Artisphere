@@ -45,9 +45,25 @@ public class DashboardActivity extends AppCompatActivity {
         //home fragment transaction (default fragment)
         actionBar.setTitle("Home"); //change actionbar title
         HomeFragment fragment1 = new HomeFragment();
-        FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
-        ft1.replace(R.id.content,fragment1,"");
-        ft1.commit();
+
+        Bundle intent = getIntent().getExtras();
+        if (intent != null){
+            String publisher = intent.getString("publisherid");
+
+            SharedPreferences.Editor editor = getSharedPreferences("PREFS",MODE_PRIVATE).edit();
+            editor.putString("profileid",publisher);
+            editor.apply();
+            actionBar.setTitle("User's Profile");
+            getSupportFragmentManager().beginTransaction().replace(R.id.content,new ProfileFragment()).commit();
+        }
+        else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content,fragment1).commit();
+        }
+
+
+
+
+
 
 
     }
@@ -78,7 +94,7 @@ public class DashboardActivity extends AppCompatActivity {
 
                         case R.id.nav_profile:
                             //profile fragment transaction
-                            actionBar.setTitle("Profile"); //change actionbar title
+                            actionBar.setTitle("My Profile"); //change actionbar title
                             ProfileFragment fragment3 = new ProfileFragment();
                             FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
                             ft3.replace(R.id.content,fragment3,"");

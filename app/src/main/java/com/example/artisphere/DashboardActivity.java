@@ -46,7 +46,7 @@ public class DashboardActivity extends AppCompatActivity {
         actionBar.setTitle("Home"); //change actionbar title
         HomeFragment fragment1 = new HomeFragment();
 
-        Bundle intent = getIntent().getExtras();
+       /* Bundle intent = getIntent().getExtras();
         if (intent != null){
             String publisher = intent.getString("publisherid");
 
@@ -58,7 +58,7 @@ public class DashboardActivity extends AppCompatActivity {
         }
         else {
             getSupportFragmentManager().beginTransaction().replace(R.id.content,fragment1).commit();
-        }
+        }*/
 
 
 
@@ -104,7 +104,7 @@ public class DashboardActivity extends AppCompatActivity {
                         case R.id.nav_sphere:
                             //home fragment transaction
                             actionBar.setTitle("Sphere"); //change actionbar title
-                            HomeFragment fragment4 = new HomeFragment();
+                            SphereFragment fragment4 = new SphereFragment();
                             FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
                             ft4.replace(R.id.content,fragment4,"");
                             ft4.commit();

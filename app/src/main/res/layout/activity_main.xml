@@ -6,24 +6,22 @@
     android:layout_height="match_parent"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
-    <ImageView
+    <!--ImageView
         android:id="@+id/imageView"
         android:layout_width="378dp"
         android:layout_height="322dp"
         android:layout_marginTop="-20dp"
         android:layout_marginBottom="528dp"
-        android:contentDescription="@string/artisphere_logo"
+        android:contentDescription="Doves Logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.411"
-        app:srcCompat="@drawable/artispherelogo" />
-
+        app:srcCompat="@drawable/artispherelogo" /-->
 
 
     <TextView
@@ -33,13 +31,13 @@
         android:layout_marginBottom="478dp"
         android:fontFamily="cursive"
         android:text="@string/app_name"
-        android:textSize="52dp"
         android:textColor="@color/colorPrimary"
+        android:textSize="52dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:text="@string/app_name" />
 
@@ -54,10 +52,10 @@
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
         android:text="Register using email"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
+        android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,10 +66,10 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
         android:text="Login using email"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
+        android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Or Sign In Using These Services"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
@@ -95,12 +93,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
 
-        android:background="@drawable/button_background"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.349" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
